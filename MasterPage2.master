@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 286px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <center>
+    <table>
+    <tr>
+    <td class="style1"> <table>
+    <tr>
+    <td>
+        <asp:Menu ID="Menu1" runat="server" ForeColor="Black" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/BLU.aspx" Text="|  Buscar Libro  |" 
+                    Value="Buscar Libro"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/RLU.aspx" Text="|  Reservar Libro  |" 
+                    Value="Reservar Libro"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/VMU.aspx" Text="| Ver Multas |" 
+                    Value="Nuevo elemento"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    </tr>
+    </table>
+    </td>
+    <td></td>
+    <td>
+    <asp:Menu ID="Menu0" runat="server" ForeColor="Black" Orientation="Horizontal" 
+            BackColor="" >
+    
+    <Items>
+    <asp:MenuItem NavigateUrl="~/Login.aspx" Text="SALIR" Value="Nuevo elemento"></asp:MenuItem>
+
+    </Items>
+    
+    </asp:Menu>
+    </td>
+    </tr>
+    
+    </table>
+    </center>
+   
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

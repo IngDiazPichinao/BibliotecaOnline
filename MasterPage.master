@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link rel="stylesheet" href="estilo.css">
+    <title>Página sin título</title>
+    <style type="text/css">
+       .a
+        {
+            width:1000px;
+            height:100px;
+            background-color:White;
+            border-radius:10px;
+            box-shadow: 5px 15px 50px #000000;
+        }
+     
+        .style1
+        {
+            width: 1052px;
+        }
+     
+        .auto-style4
+        {
+            width: 655px;
+        }
+        .auto-style5
+        {
+            width: 616px;
+        }
+     
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="">
+
+    <form id="form1" runat="server">
+    
+    <div>
+    
+ 
+    
+    <center>
+   
+    <img src="" />
+   
+    </center>
+    
+    <center>
+    <table>
+    <tr>
+    <td style="width:100%" align="center"> 
+    <table>
+        <tr>
+        <td align="center">
+            <asp:Menu ID="Menu2" runat="server" ForeColor="Black" Orientation="Horizontal" 
+                Height="16px" style="margin-left: 0px" Width="100%">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/BLAD.aspx" Text="|  Buscar Libro  |" 
+                        Value="Buscar Libro"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/RLAD.aspx" Text="|  Reservar Libro  |" 
+                        Value="Reservar Libro"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/DLAD.aspx" Text="| Devolucion Libro |" 
+                        Value="Nuevo elemento"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/VMAD.aspx" Text="| Ver Multas |" 
+                        Value="Nuevo elemento"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/IMAD.aspx" Text="| Ingresar Multas |" 
+                        Value="Nuevo elemento"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Registrolibro.aspx" Text="| Registrar Libro |" 
+                        Value="| Registrar Libro |"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </td>
+        </tr>
+    </table>
+    </td>
+    <td></td>
+    <td>
+    <asp:Menu ID="Menu0" runat="server" ForeColor="Black" Orientation="Horizontal" 
+            BackColor="" >
+    
+    <Items>
+    <asp:MenuItem NavigateUrl="~/Login.aspx" Text="SALIR" Value="Nuevo elemento"></asp:MenuItem>
+
+    </Items>
+    
+    </asp:Menu>
+    </td>
+    </tr>
+    
+    </table>
+    </center>
+    
+    
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         
+    </asp:ContentPlaceHolder>
+    
+    </div>
+    
+    </form>
+    
+</body>
+</html>
